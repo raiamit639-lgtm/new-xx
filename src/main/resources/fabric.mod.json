@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "nexus",
+  "version": "${version}",
+  "name": "Nexus",
+  "description": "A client-side rendering optimization mod for Minecraft with an animated settings dashboard covering video, quality, and performance.",
+  "authors": [
+    "You"
+  ],
+  "contact": {
+    "homepage": "https://example.com/nexus",
+    "sources": "https://example.com/nexus"
+  },
+  "license": "MIT",
+  "icon": "assets/nexus/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.nexusmod.client.NexusClient"
+    ]
+  },
+  "mixins": [
+    "nexus.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

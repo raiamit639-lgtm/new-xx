@@ -1,0 +1,36 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Nexus mod logo</title>
+<desc>A faceted crystalline letter N formed from angular render-mesh segments, cyan to violet gradient, on a dark charcoal rounded-square background.</desc>
+<defs>
+<linearGradient id="nexusGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#3EC6E0"/>
+<stop offset="55%" stop-color="#5B7FE0"/>
+<stop offset="100%" stop-color="#8C5CE0"/>
+</linearGradient>
+<linearGradient id="nexusGradDim" x1="0%" y1="100%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#2A8FA6"/>
+<stop offset="100%" stop-color="#5F3F9E"/>
+</linearGradient>
+</defs>
+
+<rect x="0" y="0" width="512" height="512" rx="96" fill="#111318"/>
+
+<!-- Left stem of N, built from 3 faceted quad segments to read as "mesh"/render-graph -->
+<polygon points="128,384 128,128 176,128 176,256 176,384" fill="url(#nexusGrad)"/>
+<polygon points="128,128 176,128 176,192 128,192" fill="#ffffff" opacity="0.10"/>
+
+<!-- Right stem of N -->
+<polygon points="336,384 336,128 384,128 384,384 336,384" fill="url(#nexusGrad)"/>
+<polygon points="336,320 384,320 384,384 336,384" fill="#000000" opacity="0.12"/>
+
+<!-- Diagonal of N, faceted into angled segments rather than one flat bar -->
+<polygon points="176,128 224,128 384,344 384,384 336,384 176,168" fill="url(#nexusGradDim)"/>
+<polygon points="176,128 224,128 264,180 220,180" fill="#ffffff" opacity="0.14"/>
+
+<!-- Node points at the three joints, echoing render-graph vertices -->
+<circle cx="152" cy="128" r="10" fill="#EAF6FA"/>
+<circle cx="360" cy="128" r="10" fill="#EAF6FA"/>
+<circle cx="360" cy="384" r="10" fill="#EAF6FA"/>
+<circle cx="152" cy="384" r="10" fill="#EAF6FA" opacity="0.55"/>
+
+</svg>
